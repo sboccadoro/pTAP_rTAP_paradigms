@@ -1,0 +1,34 @@
+INFORMATION RELEVANT FOR BEHAVIORAL ANALYSES:
+
+Logfiles: the relevant information are in the "Event Type" column:
+
+For both pTAP and rTAP lofgiles
+Three rows per trial:
+
+- choice (aggression level from 1 to 4)
+- outcome ( 1 = won, 2 = lost, 3 = lost due to time out or pressing too early).
+- Reaction times: time the participant took to press the enter button. < 300 ms = pressing too early. 5000 ms = time out (the participant did not press the button on time)
+
+Combine 2 and 3 outcomes to obtain the loss outcomes.
+
+The final row in each logfile indicates the total number of won trials.
+
+The provocation (choices of the opponent) levels in the rTAP are { 1,1,2,1,4,1,2,1,2,1,3,1,2,1,2,3,2,1,3,4,2,2,3,2,3,4,2,1,3,4,3,3,4,4,3,4,2,4,4,3 }
+
+INFORMATION RELEVANT FOR EDA ANALYSES: 
+
+pTAP EDA triggers: 
+- When the choice starts (CODE 10);
+- At the start of the empty field before the ball appears (CODE 20);
+- Outcome (CODE 30);
+- CODE 1-4 (Button press for choice)
+- CODE 5 (Button press: enter)
+
+
+rTAP EDA triggers: 
+- When the choice starts (CODE 10); 
+- Provocation from the opponent (CODE 15); 
+- At the start of the empty field before the ball appears (CODE 20); 
+- Outcome (CODE 30);
+- CODE 1-4 (Button press for choice)
+- CODE 5 (Button press: enter)
